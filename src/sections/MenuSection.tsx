@@ -1,13 +1,14 @@
 import React from "react";
+import Link from "next/link";
 
 export default function MenuSection() {
   return (
-    <section className="flex flex-col text-center gap-6 p-6 text-xl ">
+    <section className="mb-5 flex flex-col md:justify-center md:max-w-1/2 lg:max-w-1/3 md:mx-auto text-center gap-6 p-6 text-xl lg:text-2xl">
       Puedes escoger estudiar por temas o por grado:
       <div className="flex flex-col gap-6">
-        <a
+        <Link
           className="group flex items-center justify-between gap-4 rounded-lg border border-sky-600 bg-sky-600 px-5 py-3 transition-colors hover:bg-transparent focus:ring-3 focus:outline-hidden"
-          href="#"
+          href="/tema"
         >
           <span className="font-medium text-white transition-colors group-hover:text-sky-600">
             Temas
@@ -29,10 +30,10 @@ export default function MenuSection() {
               />
             </svg>
           </span>
-        </a>
+        </Link>
 
         <a
-          className="group flex items-center justify-between gap-4 rounded-lg border border-current px-5 py-3 text-sky-800 transition-colors hover:bg-sky-600 focus:ring-3 focus:outline-hidden"
+          className="group flex items-center justify-between gap-4 rounded-lg border border-current px-5 py-3 text-sky- transition-colors hover:bg-sky-600 focus:ring-3 focus:outline-hidden"
           href="#"
         >
           <span className="font-medium transition-colors group-hover:text-white">

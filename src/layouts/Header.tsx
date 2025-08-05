@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import logo from "@/assets/logo.png";
+import Link from "next/link";
 
 export default function Header() {
   const [hidden, setHidden] = useState(true);
@@ -10,32 +11,32 @@ export default function Header() {
   return (
     <header className="bg-white m-2.5 rounded-2xl shadow-lg">
       <div className="px-4 sm:px-6 lg:px-8 relative ">
-        <div className="flex h-24 items-center justify-between">
-          <div className="md:flex md:items-center md:gap-12">
-            <a
-              className="flex items-center justify-center gap-13 text-sky-800"
-              href="#"
+        <div className="flex h-24 items-center text-sky-800 justify-between ">
+          <div className="flex items-center gap-10 ">
+            <Link
+              href="/"
+              className="w-14"
             >
               <Image src={logo} alt="MathZone Logo" width={54} height={54} />
-              <span className="text-4xl font-bold notranslate">MathZone</span>
-            </a>
+            </Link>
+            <span className="text-4xl font-bold notranslate">MathZone</span>
           </div>
 
           <div
             className={` ${
               hidden
-                ? "opacity-0 translate-y-[-10%] pointer-events-none"
+                ? "opacity-0 translate-y-[-10%]"
                 : "opacity-100 translate-y-0"
-            } transition-all duration-1500 ease-in-out transform fixed inset-0 z-10 bg-blue-950/70 h-screen w-screen md:block`}
+            } transition-all duration-1500 ease-in-out transform fixed inset-0 z-10 bg-blue-950/70 h-screen w-screen md:block lg:static lg:translate-y-0 lg:opacity-100 lg:bg-transparent lg:transition-none`}
           >
             <nav
               aria-label="Global"
-              className="h-screen flex flex-col justify-center items-center"
+              className="h-screen flex flex-col lg:flex-row justify-end items-center"
             >
-              <ul className="flex flex-col justify-center items-center gap-24 text-3xl">
+              <ul className="flex flex-col justify-center lg:flex-row items-center gap-24 lg:gap-0 lg:font-bold text-3xl">
                 <li>
                   <a
-                    className="text-white min-w-45 text-center bg-sky-600 block p-2.5 rounded-2xl transition hover:text-gray-500/75"
+                    className="text-white min-w-45 text-center bg-sky-600 block lg:inline lg:bg-transparent lg:text-sky-800 p-2.5 rounded-2xl transition hover:text-sky-800/75 hover:text-3xl"
                     href="#"
                   >
                     {" "}
@@ -45,7 +46,7 @@ export default function Header() {
 
                 <li>
                   <a
-                    className="text-white min-w-45 text-center bg-sky-600 block p-2.5 rounded-2xl transition hover:text-gray-500/75"
+                    className="text-white min-w-45 text-center bg-sky-600 block p-2.5 lg:inline lg:bg-transparent lg:text-sky-800 rounded-2xl transition hover:text-gray-500/75"
                     href="#"
                   >
                     {" "}
@@ -55,7 +56,7 @@ export default function Header() {
 
                 <li>
                   <a
-                    className="text-white min-w-45 text-center bg-sky-600 block p-2.5 rounded-2xl transition hover:text-gray-500/75"
+                    className="text-white min-w-45 text-center bg-sky-600 block p-2.5 lg:inline lg:bg-transparent lg:text-sky-800 rounded-2xl transition hover:text-gray-500/75"
                     href="#"
                   >
                     {" "}
@@ -65,7 +66,7 @@ export default function Header() {
 
                 <li>
                   <a
-                    className="text-white min-w-45 text-center bg-sky-600 block p-2.5 rounded-2xl transition hover:text-gray-500/75"
+                    className="text-white min-w-45 text-center bg-sky-600 block p-2.5 lg:inline lg:bg-transparent lg:text-sky-800 not-[]:rounded-2xl transition hover:text-gray-500/75"
                     href="#"
                   >
                     {" "}
@@ -77,7 +78,7 @@ export default function Header() {
           </div>
 
           <div className="flex items-center gap-4">
-            <div className="block md:hidden md:pointer-events-none">
+            <div className="block lg:hidden lg:pointer-events-none">
               <button
                 onClick={() => setHidden(!hidden)}
                 className="rounded-sm absolute right-5 top-7 z-20 bg-gray-100 p-2 text-gray-600 transition hover:text-gray-600/75 "
