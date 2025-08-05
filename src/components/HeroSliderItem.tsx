@@ -10,12 +10,12 @@ type HeroSliderItemProps = {
 
 export default function HeroSliderItem({ title, description, images }: HeroSliderItemProps) {
   return (
-    <article className='keen-slider__slide flex flex-col gap-6 min-w-full min-h-1/2 px-6 py-12 '>
-      <h2 className='text-center font-bold text-4xl'>{title}</h2>
-      <p className='text-center text-xl'>{description}</p>
-      <div className="flex justify-center items-center gap-4">
+    <article className='keen-slider__slide flex flex-col lg:grid lg:grid-cols-2  gap-6 min-w-full min-h-1/2 px-6 lg:px-24 py-12 '>
+      <h2 className='text-center font-bold text-4xl lg:self-end '>{title}</h2>
+      <p className='text-center text-xl lg:row-start-2'>{description}</p>
+      <div className="flex lg:row-span-2 justify-center items-center gap-4">
         {images.map((image, index) => (
-            <div key={index} className="relative w-48 h-48">
+            <div key={index} className="relative w-48 h-48 lg:w-64 lg:h-64">
                 <Image
                     src={image.src}
                     alt={image.alt}

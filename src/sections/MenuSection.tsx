@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function MenuSection() {
   return (
-    <section className="mb-5 flex flex-col md:justify-center md:max-w-1/2 lg:max-w-1/3 md:mx-auto text-center gap-6 p-6 text-xl lg:text-2xl">
+    <section className="mb-5 z-10 flex flex-col md:justify-center md:max-w-1/2 lg:max-w-1/3 md:mx-auto text-center gap-6 p-6 text-xl lg:text-2xl">
       Puedes escoger estudiar por temas o por grado:
       <div className="flex flex-col gap-6">
         <Link

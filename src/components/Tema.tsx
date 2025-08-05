@@ -8,7 +8,7 @@ export default function Tema({ title, description, image }: TemaType) {
       <Image alt={image.alt} src={image.src} width={120} height={100} />
 
       <div className="relative">
-        <h3 className="font-medium text-2xl text-gray-900 sm:text-lg">
+        <h3 className="font-bold text-2xl lg:text-3xl text-gray-900 sm:text-lg">
           {title}
         </h3>
 
@@ -16,7 +16,7 @@ export default function Tema({ title, description, image }: TemaType) {
 
 
         <a
-          className="absolute right-0 top-1 inline-block rounded-full border border-white bg-sky-900 p-1 text-white hover:bg-transparent hover:text-indigo-600 focus:ring-3 focus:outline-hidden"
+          className="absolute animate-pulse right-0 top-1 inline-block rounded-full border border-white bg-sky-900 p-1 text-white hover:bg-transparent hover:text-indigo-600 focus:ring-3 focus:outline-hidden"
           href="#"
         >
 
@@ -33,6 +33,7 @@ export default function Tema({ title, description, image }: TemaType) {
               strokeWidth="2"
               d="M14 5l7 7m0 0l-7 7m7-7H3"
             />
+            
           </svg>
         </a>
       </div>

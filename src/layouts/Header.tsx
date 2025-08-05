@@ -25,54 +25,55 @@ export default function Header() {
           <div
             className={` ${
               hidden
-                ? "opacity-0 translate-y-[-10%]"
-                : "opacity-100 translate-y-0"
-            } transition-all duration-1500 ease-in-out transform fixed inset-0 z-10 bg-blue-950/70 h-screen w-screen md:block lg:static lg:translate-y-0 lg:opacity-100 lg:bg-transparent lg:transition-none`}
+                ? "opacity-0 translate-y-[-30%]"
+                : "opacity-100 translate-y-0 z-10"
+            } transition-all duration-1000 ease-in-out transform -z-10 lg:z-0 fixed inset-0   bg-blue-950/70 h-screen w-screen md:block lg:static lg:translate-y-0 lg:opacity-100 lg:bg-transparent lg:transition-none`}
           >
             <nav
               aria-label="Global"
-              className="h-screen flex flex-col lg:flex-row justify-end items-center"
+              className="h-screen flex flex-col justify-center lg:flex-row lg:justify-end items-center"
             >
-              <ul className="flex flex-col justify-center lg:flex-row items-center gap-24 lg:gap-0 lg:font-bold text-3xl">
+              <ul className="flex flex-col justify-center lg:flex-row items-center gap-24 lg:gap-8 lg:font-bold text-3xl">
                 <li>
-                  <a
-                    className="text-white min-w-45 text-center bg-sky-600 block lg:inline lg:bg-transparent lg:text-sky-800 p-2.5 rounded-2xl transition hover:text-sky-800/75 hover:text-3xl"
+                  <Link
+                    className="text-white min-w-45 text-center bg-sky-600 block lg:inline lg:bg-transparent lg:text-sky-800 p-2.5 rounded-2xl transition hover:text-sky-800/75"
                     href="#"
                   >
                     {" "}
                     Nosotros{" "}
-                  </a>
+                  </Link>
                 </li>
 
                 <li>
-                  <a
-                    className="text-white min-w-45 text-center bg-sky-600 block p-2.5 lg:inline lg:bg-transparent lg:text-sky-800 rounded-2xl transition hover:text-gray-500/75"
-                    href="#"
+                  <Link
+                    className="text-white min-w-45 text-center bg-sky-600 block p-2.5 lg:inline lg:bg-transparent lg:text-sky-800 rounded-2xl transition hover:text-sky-800/75"
+                    href="/tema"
                   >
                     {" "}
                     Temas{" "}
-                  </a>
+                  </Link>
                 </li>
 
                 <li>
-                  <a
-                    className="text-white min-w-45 text-center bg-sky-600 block p-2.5 lg:inline lg:bg-transparent lg:text-sky-800 rounded-2xl transition hover:text-gray-500/75"
+                  <Link
+                    className="text-white min-w-45 text-center bg-sky-600 block p-2.5 lg:inline lg:bg-transparent lg:text-sky-800 rounded-2xl transition hover:text-sky-800/75"
                     href="#"
                   >
                     {" "}
                     Grados{" "}
-                  </a>
+                  </Link>
                 </li>
 
                 <li>
-                  <a
-                    className="text-white min-w-45 text-center bg-sky-600 block p-2.5 lg:inline lg:bg-transparent lg:text-sky-800 not-[]:rounded-2xl transition hover:text-gray-500/75"
+                  <Link
+                    className="text-white min-w-45 text-center bg-sky-600 block p-2.5 lg:inline lg:bg-transparent lg:text-sky-800 rounded-2xl transition hover:text-sky-800/75"
                     href="#"
                   >
                     {" "}
                     Test{" "}
-                  </a>
+                  </Link>
                 </li>
+
               </ul>
             </nav>
           </div>

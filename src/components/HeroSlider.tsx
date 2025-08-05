@@ -61,7 +61,7 @@ export default function HeroSlider({
 
   return (
     <>
-      <div ref={sliderRef} className="keen-slider z-50">
+      <div ref={sliderRef} className="keen-slider">
         {children}
       </div>
       {loaded && instanceRef.current && (
