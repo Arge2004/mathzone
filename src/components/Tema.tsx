@@ -3,6 +3,10 @@ import Image from "next/image";
 import type { Tema as TemaType } from "@/data/Temas";
 
 export default function Tema({ title, description, image }: TemaType) {
+  const eliminateAccents = (str: string) => {
+    const res = str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+    return res;
+  };
   return (
     <div className="flex items-center gap-4">
       <Image alt={image.alt} src={image.src} width={120} height={100} />
@@ -17,7 +21,7 @@ export default function Tema({ title, description, image }: TemaType) {
 
         <a
           className="absolute animate-pulse right-0 top-1 inline-block rounded-full border border-white bg-sky-900 p-1 text-white hover:bg-transparent hover:text-indigo-600 focus:ring-3 focus:outline-hidden"
-          href="#"
+          href={`/tema/${eliminateAccents(title)}`}
         >
 
           <svg

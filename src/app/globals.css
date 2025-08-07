@@ -18,6 +18,14 @@
 } 
 
 
+@utility h2-temas{
+  @apply text-3xl font-bold text-sky-800 text-center;
+}
+
+@utility h3-temas{
+  @apply text-2xl font-bold text-sky-800 text-center;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   color: #0d3454;

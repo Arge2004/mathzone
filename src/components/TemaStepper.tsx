@@ -1,56 +1,53 @@
-import {
-  Stepper,
-  StepperDescription,
-  StepperIndicator,
-  StepperItem,
-  StepperSeparator,
-  StepperTitle,
-  StepperTrigger,
-} from "@/components/ui/stepper"
+import React from "react";
 
-const steps = [
-  {
-    step: 1,
-    title: "Step One",
-    description: "Desc for step one",
-  },
-  {
-    step: 2,
-    title: "Step Two",
-    description: "Desc for step two",
-  },
-  {
-    step: 3,
-    title: "Step Three",
-    description: "Desc for step three",
-  },
-]
+type Step = {
+  title: string;
+};
 
-export default function TemaStepper() {
+type TemaStepperProps = {
+  steps: Step[];
+  currentStep: number;
+  children: React.ReactNode;
+};
+
+export default function TemaStepper({
+  steps,
+  currentStep,
+  children,
+}: TemaStepperProps) {
+  const { 0: firstChild, 1: secondChild } = React.Children.toArray(children);
   return (
-    <div className="space-y-8 text-center">
-      <Stepper defaultValue={1}>
-        {steps.map(({ step, title, description }) => (
-          <StepperItem
-            key={step}
-            step={step}
-            className="relative flex-1 flex-col!"
+    <div className="mx-auto">
+      <ol className="items-center justify-center w-full space-y-4 flex sm:space-x-8 sm:space-y-0 rtl:space-x-reverse">
+        {steps.map((step, idx) => (
+          <li
+            key={step.title}
+            className={`flex items-center ${
+              idx === currentStep - 1
+                ? "text-blue-600 dark:text-blue-500"
+                : "text-gray-500 dark:text-gray-400 hidden "
+            } 
+                space-x-2.5 rtl:space-x-reverse`}
           >
-            <StepperTrigger className="flex-col gap-3 rounded">
-              <StepperIndicator />
-              <div className="space-y-0.5 px-2">
-                <StepperTitle>{title}</StepperTitle>
-                <StepperDescription className="max-sm:hidden">
-                  {description}
-                </StepperDescription>
-              </div>
-            </StepperTrigger>
-            {step < steps.length && (
-              <StepperSeparator className="absolute inset-x-0 top-3 left-[calc(50%+0.75rem+0.125rem)] -order-1 m-0 -translate-y-1/2 group-data-[orientation=horizontal]/stepper:w-[calc(100%-1.5rem-0.25rem)] group-data-[orientation=horizontal]/stepper:flex-none" />
-            )}
-          </StepperItem>
+            {firstChild}
+            <span
+              className={`flex items-center justify-center w-8 h-8 border rounded-full shrink-0 ${
+                idx === currentStep - 1
+                  ? "border-blue-600 dark:border-blue-500"
+                  : "border-gray-500 dark:border-gray-400"
+              }`}
+            >
+              {currentStep}
+            </span>
+            <span>
+              <h3 className="font-medium leading-tight text-xl">
+                {step.title}
+              </h3>
+            </span>
+            {secondChild}
+          </li>
         ))}
-      </Stepper>
+      </ol>
     </div>
-  )
+  );
 }
