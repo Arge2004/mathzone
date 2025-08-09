@@ -17,7 +17,7 @@ import StepOperation from "@/components/StepOperation";
 export default function ExplicacionItem() {
   return (
     <article className="flex flex-col gap-5 mb-8 px-10 text-justify items-center text-lg/relaxed">
-      <h3 className="h3-temas">Division de Potencias</h3>
+      <h3 className="h3-temas">División de Potencias</h3>
       <p>
         Al igual que con la multiplación, existen diferentes reglas para dividir
         potencias, según si las bases o los exponentes son iguales. A
