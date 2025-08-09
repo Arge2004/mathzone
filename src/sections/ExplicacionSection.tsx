@@ -34,7 +34,7 @@ export default function ExplicacionSection({
   if (isLoading) return <p>Cargando...</p>;
 
   return (
-    <div className="bg-white m-2.5 flex flex-col gap-5 my-4 py-10 rounded-3xl shadow-lg h-full">
+    <div className="bg-white m-2.5 flex flex-col gap-5 lg:gap-10 my-4 py-10 rounded-3xl shadow-lg h-full">
       {children}
       <Component />
       {children}

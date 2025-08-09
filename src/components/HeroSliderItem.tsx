@@ -15,7 +15,7 @@ export default function HeroSliderItem({ title, description, images }: HeroSlide
       <p className='text-center text-xl lg:row-start-2'>{description}</p>
       <div className="flex lg:row-span-2 justify-center items-center gap-4">
         {images.map((image, index) => (
-            <div key={index} className="relative w-48 h-48 lg:w-64 lg:h-64">
+            <div key={index} className="relative w-48 h-48 lg:w-104 lg:h-104">
                 <Image
                     src={image.src}
                     alt={image.alt}

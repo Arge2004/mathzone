@@ -5,7 +5,6 @@ import { useParams } from "next/navigation";
 import ExplicacionSection from "@/sections/ExplicacionSection";
 import TemaStepper from "@/components/TemaStepper";
 import { useEffect, useRef } from "react";
-import Link from "next/link";
 
 export default function TemaExplicacion() {
   const [currentStep, setCurrentStep] = React.useState(1);
@@ -29,13 +28,17 @@ export default function TemaExplicacion() {
     });
   }, [currentStep, tema]);
 
+  useEffect(() => {
+    console.log("Step actualizado:", currentStep);
+  }, [currentStep]);
+
   return (
     <div ref={containerRef}>
       <ExplicacionSection tema={tema} step={currentStep}>
-        <TemaStepper steps={steps} currentStep={currentStep}>
-          {currentStep > 1 ? (
+        <div className="flex items-center mx-auto gap-2">
+          {currentStep > 1 && (
             <svg
-              className="ltr:rotate-180 w-6 h-6"
+              className="ltr:rotate-180 w-6 h-6 flex-1 hover:cursor-pointer hover:scale-110 transition-transform duration-500 2xl:hidden"
               onClick={() => setCurrentStep(currentStep - 1)}
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
@@ -50,12 +53,17 @@ export default function TemaExplicacion() {
                 d="M1 5h12m0 0L9 1m4 4L9 9"
               />
             </svg>
-          ) : (
-            <></>
           )}
-          {currentStep < steps.length ? (
+
+          <TemaStepper
+            steps={steps}
+            currentStep={currentStep}
+            onclick={setCurrentStep}
+          />
+
+          {currentStep < steps.length && (
             <svg
-              className="rtl:rotate-180 w-6 h-6"
+              className="rtl:rotate-180 w-6 h-6 flex-1 hover:cursor-pointer hover:scale-110 transition-transform duration-500 2xl:hidden"
               onClick={() => setCurrentStep(currentStep + 1)}
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
@@ -70,10 +78,8 @@ export default function TemaExplicacion() {
                 d="M1 5h12m0 0L9 1m4 4L9 9"
               />
             </svg>
-          ) : (
-            <></>
           )}
-        </TemaStepper>
+        </div>
       </ExplicacionSection>
     </div>
   );

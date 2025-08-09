@@ -29,8 +29,8 @@ export default function MenuOverlay() {
           <ul className="flex flex-col justify-center lg:flex-row items-center gap-24 lg:gap-8 lg:font-bold text-3xl">
             <li>
               <Link
-                className="text-white min-w-45 text-center bg-sky-600 block lg:inline lg:bg-transparent lg:text-sky-800 p-2.5 rounded-2xl transition hover:text-sky-800/75"
-                href="#"
+                className="text-white min-w-45 text-center bg-sky-600 block lg:inline lg:bg-transparent lg:text-sky-800 p-2.5 rounded-2xl transition hover:text-sky-800/75 "
+                href="/"
               >
                 {" "}
                 Nosotros{" "}
