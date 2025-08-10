@@ -4,6 +4,7 @@
 
 @theme{
   --animate-float: float 3s ease-in-out infinite;
+  --animate-arrow-move: arrow-move 2s ease-in-out infinite;
 
   @keyframes float{
           0%, 
@@ -15,7 +16,18 @@
             transform: translateY(-15px); 
           }
       }
-} 
+  @keyframes arrow-move{
+          0%, 
+          100% { 
+            transform: translateX(0); 
+          }
+
+          50% { 
+            transform: translateX(5px); 
+          }
+      }
+  }
+
 
 
 @utility h2-temas{

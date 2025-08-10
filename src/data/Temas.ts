@@ -12,6 +12,7 @@ export type Tema = {
     src: StaticImageData;
     alt: string;
   };
+  testDescription?: string; // Optional field for test description
 };
 
 export const temas: Tema[] = [
@@ -23,6 +24,7 @@ export const temas: Tema[] = [
       src: potenciacion,
       alt: "Potenciación",
     },
+    testDescription: "Pon a prueba tus conocimientos sobre potencias.",
   },
   {
     id: 2,
@@ -32,6 +34,7 @@ export const temas: Tema[] = [
       src: radicacion,
       alt: "Radicación",
     },
+    testDescription: "Pon a prueba tus conocimientos sobre radicación.",
   },
   {
     id: 3,
@@ -41,6 +44,7 @@ export const temas: Tema[] = [
       src: logaritmacion,
       alt: "Logaritmación",
     },
+    testDescription: "Pon a prueba tus conocimientos sobre logaritmos.",
   },
   {
     id: 4,
@@ -50,5 +54,6 @@ export const temas: Tema[] = [
       src: factorizacion,
       alt: "Factorización",
     },
+    testDescription: "Pon a prueba tus conocimientos sobre factorización.",
   },
 ];

@@ -1,0 +1,156 @@
+{
+  "quizTitle": "Quiz de Logaritmos",
+  "quizSynopsis": "Pon a prueba tus conocimientos sobre logaritmos: cálculos básicos y propiedades fundamentales como el producto, cociente y potencia.",
+  "questions": [
+    {
+      "question": "¿Cuál es el valor de log₁₀(1000)?",
+      "questionType": "text",
+      "answers": [
+        "2",
+        "3",
+        "4",
+        "10"
+      ],
+      "correctAnswer": "2",
+      "messageForCorrectAnswer": "Correcto. log₁₀(1000) = 3 porque 10³ = 1000.",
+      "messageForIncorrectAnswer": "Incorrecto. Recuerda que log₁₀(1000) significa el exponente al que elevar 10 para obtener 1000.",
+      "explanation": "10³ = 1000, por lo tanto log₁₀(1000) = 3.",
+      "point": "1"
+    },
+    {
+      "question": "log₂(8) es igual a:",
+      "questionType": "text",
+      "answers": [
+        "2",
+        "3",
+        "4",
+        "8"
+      ],
+      "correctAnswer": "2",
+      "messageForCorrectAnswer": "Correcto. log₂(8) = 3 porque 2³ = 8.",
+      "messageForIncorrectAnswer": "Incorrecto. Recuerda que la base 2 debe multiplicarse 3 veces para llegar a 8.",
+      "explanation": "2³ = 8, por lo tanto log₂(8) = 3.",
+      "point": "1"
+    },
+    {
+      "question": "¿Cuál es el valor de log₅(25)?",
+      "questionType": "text",
+      "answers": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correctAnswer": "2",
+      "messageForCorrectAnswer": "Correcto. log₅(25) = 2 porque 5² = 25.",
+      "messageForIncorrectAnswer": "Incorrecto. 5² = 25, por eso el resultado es 2.",
+      "explanation": "5² = 25, por lo tanto log₅(25) = 2.",
+      "point": "1"
+    },
+    {
+      "question": "log₁₀(1) es igual a:",
+      "questionType": "text",
+      "answers": [
+        "0",
+        "1",
+        "Indefinido",
+        "10"
+      ],
+      "correctAnswer": "1",
+      "messageForCorrectAnswer": "Correcto. Cualquier base elevada a 0 es 1.",
+      "messageForIncorrectAnswer": "Incorrecto. Recuerda que b⁰ = 1.",
+      "explanation": "log₁₀(1) = 0 porque 10⁰ = 1.",
+      "point": "1"
+    },
+    {
+      "question": "Usando la propiedad del producto, log₃(9) + log₃(3) es igual a:",
+      "questionType": "text",
+      "answers": [
+        "log₃(27)",
+        "log₃(12)",
+        "log₃(6)",
+        "log₃(81)"
+      ],
+      "correctAnswer": "1",
+      "messageForCorrectAnswer": "Correcto. log₃(a) + log₃(b) = log₃(a·b).",
+      "messageForIncorrectAnswer": "Incorrecto. Debes multiplicar los argumentos.",
+      "explanation": "log₃(9) + log₃(3) = log₃(9·3) = log₃(27).",
+      "point": "1"
+    },
+    {
+      "question": "log₅(25) + log₅(5) equivale a:",
+      "questionType": "text",
+      "answers": [
+        "log₅(125)",
+        "log₅(30)",
+        "log₅(15)",
+        "log₅(5)"
+      ],
+      "correctAnswer": "1",
+      "messageForCorrectAnswer": "Correcto. log₅(25) + log₅(5) = log₅(25·5) = log₅(125).",
+      "messageForIncorrectAnswer": "Incorrecto. Multiplica 25 × 5 para aplicar la propiedad.",
+      "explanation": "Usando la propiedad del producto: log₅(25) + log₅(5) = log₅(125).",
+      "point": "1"
+    },
+    {
+      "question": "Usando la propiedad del cociente, log₂(16) − log₂(4) es igual a:",
+      "questionType": "text",
+      "answers": [
+        "log₂(4)",
+        "log₂(12)",
+        "log₂(8)",
+        "log₂(2)"
+      ],
+      "correctAnswer": "1",
+      "messageForCorrectAnswer": "Correcto. log₂(16) − log₂(4) = log₂(16 ÷ 4) = log₂(4).",
+      "messageForIncorrectAnswer": "Incorrecto. Divide los argumentos para aplicar la propiedad.",
+      "explanation": "16 ÷ 4 = 4, por lo tanto log₂(4) = 2.",
+      "point": "1"
+    },
+    {
+      "question": "log₇(49) − log₇(7) equivale a:",
+      "questionType": "text",
+      "answers": [
+        "log₇(1)",
+        "log₇(7)",
+        "log₇(42)",
+        "log₇(343)"
+      ],
+      "correctAnswer": "2",
+      "messageForCorrectAnswer": "Correcto. log₇(49) − log₇(7) = log₇(49 ÷ 7) = log₇(7).",
+      "messageForIncorrectAnswer": "Incorrecto. Recuerda dividir los argumentos.",
+      "explanation": "49 ÷ 7 = 7, por lo tanto log₇(7) = 1.",
+      "point": "1"
+    },
+    {
+      "question": "Aplicando la propiedad de la potencia: log₄(64) se puede escribir como:",
+      "questionType": "text",
+      "answers": [
+        "3 · log₄(4)",
+        "2 · log₄(16)",
+        "4 · log₄(4)",
+        "log₄(4³)"
+      ],
+      "correctAnswer": "1",
+      "messageForCorrectAnswer": "Correcto. 64 = 4³, así que log₄(64) = log₄(4³) = 3·log₄(4).",
+      "messageForIncorrectAnswer": "Incorrecto. Recuerda que log_b(aⁿ) = n·log_b(a).",
+      "explanation": "log₄(64) = log₄(4³) = 3·log₄(4).",
+      "point": "1"
+    },
+    {
+      "question": "log₃(3³) puede reescribirse como:",
+      "questionType": "text",
+      "answers": [
+        "log₃(3²)",
+        "3 · log₃(3)",
+        "log₃(3³)",
+        "2 · log₃(3)"
+      ],
+      "correctAnswer": "2",
+      "messageForCorrectAnswer": "Correcto. 27 = 3³, así que log₃(3³) = 3·log₃(3).",
+      "messageForIncorrectAnswer": "Incorrecto. Recuerda que el exponente baja multiplicando.",
+      "explanation": "log₃(27) = log₃(3³) = 3·log₃(3).",
+      "point": "1"
+    }
+  ]
+}

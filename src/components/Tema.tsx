@@ -2,7 +2,11 @@ import React from "react";
 import Image from "next/image";
 import type { Tema as TemaType } from "@/data/Temas";
 
-export default function Tema({ title, description, image }: TemaType) {
+interface TemaProps extends TemaType {
+  test?: boolean;
+}
+
+export default function Tema({ title, description, image, test=false}: TemaProps) {
   const eliminateAccents = (str: string) => {
     const res = str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
     return res;
@@ -20,8 +24,8 @@ export default function Tema({ title, description, image }: TemaType) {
 
 
         <a
-          className="absolute animate-pulse right-0 top-1 inline-block rounded-full border border-white bg-sky-900 p-1 text-white hover:bg-transparent hover:text-indigo-600 focus:ring-3 focus:outline-hidden"
-          href={`/tema/${eliminateAccents(title)}`}
+          className="absolute animate-arrow-move right-0 top-1 inline-block rounded-full border border-white bg-sky-900 p-1 text-white hover:bg-transparent hover:text-indigo-600 focus:ring-3 focus:outline-hidden"
+          href={test ? `/test/${eliminateAccents(title)}` : `/tema/${eliminateAccents(title)}`}
         >
 
           <svg

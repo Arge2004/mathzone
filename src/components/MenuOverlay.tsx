@@ -31,6 +31,7 @@ export default function MenuOverlay() {
               <Link
                 className="text-white min-w-45 text-center bg-sky-600 block lg:inline lg:bg-transparent lg:text-sky-800 p-2.5 rounded-2xl transition hover:text-sky-800/75 "
                 href="/"
+                onClick={() => setHidden(true)}
               >
                 {" "}
                 Nosotros{" "}
@@ -41,6 +42,7 @@ export default function MenuOverlay() {
               <Link
                 className="text-white min-w-45 text-center bg-sky-600 block p-2.5 lg:inline lg:bg-transparent lg:text-sky-800 rounded-2xl transition hover:text-sky-800/75"
                 href="/tema"
+                onClick={() => setHidden(true)}
               >
                 {" "}
                 Temas{" "}
@@ -50,7 +52,8 @@ export default function MenuOverlay() {
             <li>
               <Link
                 className="text-white min-w-45 text-center bg-sky-600 block p-2.5 lg:inline lg:bg-transparent lg:text-sky-800 rounded-2xl transition hover:text-sky-800/75"
-                href="#"
+                href="/grados"
+                onClick={() => setHidden(true)}
               >
                 {" "}
                 Grados{" "}
@@ -60,7 +63,8 @@ export default function MenuOverlay() {
             <li>
               <Link
                 className="text-white min-w-45 text-center bg-sky-600 block p-2.5 lg:inline lg:bg-transparent lg:text-sky-800 rounded-2xl transition hover:text-sky-800/75"
-                href="#"
+                href="/test"
+                onClick={() => setHidden(true)}
               >
                 {" "}
                 Test{" "}
