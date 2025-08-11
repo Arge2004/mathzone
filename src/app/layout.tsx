@@ -29,7 +29,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gradient-to-b from-sky-200 to-sky-300 h-full min-h-screen `}
       >
         <Header />
-        <main>
+        <main className="max-w-8xl">
           {children}
         </main>
           

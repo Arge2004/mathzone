@@ -5,7 +5,7 @@ import { temas } from "@/data/Temas";
 
 export default function TemaSection() {
   return (
-    <section className="mb-5 flex flex-col items-center gap-6 p-6 lg:p-32 text-xl lg:text-2xl ">
+    <section className="mb-5 flex flex-col bg-white  min-h-[600px] m-2.5 rounded-2xl items-center justify-center gap-6 p-6 text-xl lg:text-2xl">
         <h2 className='mb-4 text-center text-3xl  font-bold bg-sky-300 py-3 px-8 border-2 border-sky-700 rounded-3xl'>
             Temas
         </h2>
