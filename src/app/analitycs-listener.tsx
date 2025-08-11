@@ -1,10 +1,11 @@
 "use client";
 
+import { Suspense } from "react";
 import { usePathname, useSearchParams } from "next/navigation";
 import { useEffect } from "react";
 import * as gtag from "@/lib/gtag";
 
-export default function AnalyticsListener() {
+function AnalyticsInner() {
   const pathname = usePathname();
   const searchParams = useSearchParams();
 
@@ -14,4 +15,12 @@ export default function AnalyticsListener() {
   }, [pathname, searchParams]);
 
   return null;
+}
+
+export default function AnalyticsListener() {
+  return (
+    <Suspense fallback={null}>
+      <AnalyticsInner />
+    </Suspense>
+  );
 }
