@@ -32,9 +32,9 @@ export default function MenuSection() {
           </span>
         </Link>
 
-        <a
+        <Link
           className="group flex items-center justify-between gap-4 rounded-lg border border-current px-5 py-3 text-sky- transition-colors hover:bg-sky-600 focus:ring-3 focus:outline-hidden"
-          href="#"
+          href="/grados"
         >
           <span className="font-medium transition-colors group-hover:text-white">
             {" "}
@@ -57,14 +57,14 @@ export default function MenuSection() {
               />
             </svg>
           </span>
-        </a>
+        </Link  >
       </div>
       <p>
         Tambien puedes evaluar tus conocimientos:
       </p>
-      <a
+      <Link
           className="group flex items-center justify-between gap-4 rounded-lg border border-sky-600 bg-sky-600 px-5 py-3 transition-colors hover:bg-transparent focus:ring-3 focus:outline-hidden"
-          href="#"
+          href="/test"
         >
           <span className="font-medium text-white transition-colors group-hover:text-sky-600">
             Test
@@ -86,7 +86,7 @@ export default function MenuSection() {
               />
             </svg>
           </span>
-        </a>
+        </Link>
     </section>
   );
 }

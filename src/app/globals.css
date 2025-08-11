@@ -44,6 +44,6 @@ body {
   color: #0d3454;
 }
 
-p, li {
+main > p, main > li {
   @apply lg:text-2xl/loose
 }

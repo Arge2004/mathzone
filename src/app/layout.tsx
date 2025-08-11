@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Script from "next/script";
 import { Geist, Geist_Mono } from "next/font/google";
 import Header from "@/layouts/Header";
+import Footer from "@/layouts/Footer";
 import "./globals.css";
 import AnalyticsListener from "./analitycs-listener";
 
@@ -54,7 +55,7 @@ export default function RootLayout({
         <main className="max-w-8xl">
           {children}
         </main>
-          
+        <Footer />
       </body>
     </html>
   );
