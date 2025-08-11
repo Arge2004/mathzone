@@ -4,6 +4,7 @@ import correct from "@/assets/correct_circle.png";
 import incorrect from "@/assets/wrong_circle.png";
 import image10 from "@/assets/operaciones/radicacion/RadicaciónImage10.png";
 import image11 from "@/assets/operaciones/radicacion/RadicaciónImage11.png";
+import YouTubePlayer from "@/components/YoutubePlayer";
 
 export default function ExplicacionItem() {
   return (
@@ -40,6 +41,11 @@ export default function ExplicacionItem() {
       <p>
         Estas raíces no se pueden multiplicar ya que tienen <strong>índices</strong> diferentes (3 y 2)
       </p>
+      <YouTubePlayer
+        videoId="cvFL5othxwg"
+        title="Multiplicación de Raíces"
+        author="Matemáticas profe Alex"
+      />
     </article>
   );
 }

@@ -5,6 +5,7 @@ import correct from "@/assets/correct_circle.png";
 import incorrect from "@/assets/wrong_circle.png";
 import image8 from "@/assets/operaciones/radicacion/RadicaciónImage8.png";
 import image9 from "@/assets/operaciones/radicacion/RadicaciónImage9.png";
+import YouTubePlayer from "@/components/YoutubePlayer";
 
 
 export default function ExplicacionItem() {
@@ -68,6 +69,11 @@ export default function ExplicacionItem() {
       <p>
         Esta resta está correcta ya que el índice y el radicando son iguales.
       </p>
+      <YouTubePlayer
+        videoId="2BVgn1wk5ko"
+        title="Suma y Resta de Raíces "
+        author="Matemáticas profe Alex"
+      />
     </article>
   );
 }

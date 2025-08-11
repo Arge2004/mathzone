@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import image6 from "@/assets/operaciones/logaritmacion/LogaritmaciónImage6.png";
 import image7 from "@/assets/operaciones/logaritmacion/LogaritmaciónImage7.png";
+import YouTubePlayer from "@/components/YoutubePlayer";
 
 
 export default function ExplicacionItem() {
@@ -15,6 +16,11 @@ export default function ExplicacionItem() {
       <Image src={image6} alt="Propiedad del Cociente" width={300} height={200} className="scale-120 my-5" />
       <h4 className="h3-temas">Ejemplo</h4>
       <Image src={image7} alt="Ejemplo" width={300} height={200} className="scale-120 my-5" />
+      <YouTubePlayer
+        videoId="EiOFGGhWLlY"
+        title="Propiedad del Cociente"
+        author="Matemáticas profe Alex"
+      />
     </article>
   );
 }

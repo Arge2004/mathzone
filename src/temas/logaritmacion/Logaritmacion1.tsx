@@ -3,6 +3,7 @@ import Image from "next/image";
 import image1 from "@/assets/operaciones/logaritmacion/LogaritmaciónImage1.png";
 import image2 from "@/assets/operaciones/logaritmacion/LogaritmaciónImage2.png";
 import image3 from "@/assets/operaciones/logaritmacion/LogaritmaciónImage3.png";
+import YouTubePlayer from "@/components/YoutubePlayer";
 
 export default function ExplicacionItem() {
   return (
@@ -42,6 +43,11 @@ export default function ExplicacionItem() {
           <Image src={image3} alt="Forma exponencial" width={300} height={200} className="scale-70" />
         </div>
       </div>
+      <YouTubePlayer
+        videoId="pZTuEHrnOMg"
+        title="Logaritmación"
+        author="Matemáticas profe Alex"
+      />  
     </article>
   );
 }

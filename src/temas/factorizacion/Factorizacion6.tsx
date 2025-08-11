@@ -15,6 +15,7 @@ import image35 from "@/assets/operaciones/factorizacion/FactorizaciónImage35.pn
 import image36 from "@/assets/operaciones/factorizacion/FactorizaciónImage36.png";
 import image37 from "@/assets/operaciones/factorizacion/FactorizaciónImage37.png";
 import image38 from "@/assets/operaciones/factorizacion/FactorizaciónImage38.png";
+import YouTubePlayer from "@/components/YoutubePlayer";
 
 export default function Factorizacion1() {
   return (
@@ -175,6 +176,11 @@ export default function Factorizacion1() {
         height={200}
         className="scale-120"
       />
+      <YouTubePlayer
+        videoId="YAENVrFtO6E"
+        title="Trinomio Cuadrado Perfecto"
+        author="Matemáticas profe Alex"
+      />  
     </article>
   );
 }

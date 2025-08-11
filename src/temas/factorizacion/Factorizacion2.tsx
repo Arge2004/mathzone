@@ -3,6 +3,7 @@ import Image from "next/image";
 import image1 from "@/assets/operaciones/factorizacion/FactorizaciónImage1.png";
 import image2 from "@/assets/operaciones/factorizacion/FactorizaciónImage2.png";
 import image3 from "@/assets/operaciones/factorizacion/FactorizaciónImage3.png";
+import YouTubePlayer from "@/components/YoutubePlayer";
 
 export default function Factorizacion1() {
   return (
@@ -42,7 +43,11 @@ export default function Factorizacion1() {
             className="scale-120 my-5"
         />
         <p>Se sacó <strong>4xy</strong> como factor común ya que aparece en ambos términos</p>
-
+        <YouTubePlayer
+          videoId="R2hI8YqmtqM"
+          title="Factor Común"
+          author="Matemáticas profe Alex"
+        />
 
     </article>
   );

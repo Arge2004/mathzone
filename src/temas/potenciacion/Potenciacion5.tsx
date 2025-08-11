@@ -13,6 +13,7 @@ import image31 from "@/assets/operaciones/potenciacion/PotenciaciónImage31.png"
 import image32 from "@/assets/operaciones/potenciacion/PotenciaciónImage32.png";
 
 import StepOperation from "@/components/StepOperation";
+import YouTubePlayer from "@/components/YoutubePlayer";
 
 export default function ExplicacionItem() {
   return (
@@ -53,6 +54,11 @@ export default function ExplicacionItem() {
         height={200}
         className="mb-5 scale-80"
       />
+      <YouTubePlayer
+        videoId="1kXiQ9Cwac8"
+        title="División con Bases Iguales"
+        author="Profe Richard"
+      />
       <h4 className="h3-temas">
         2. División de potencias de exponentes iguales
       </h4>
@@ -83,6 +89,11 @@ export default function ExplicacionItem() {
         width={500}
         height={200}
         className="mb-5 scale-80"
+      />
+      <YouTubePlayer
+        videoId="1ikbTwPCJ28"
+        title="División con Exponentes Iguales"
+        author="Profe Richard"
       />
       <h4 className="h3-temas">
         3. División de potencias de bases y exponentes diferentes
@@ -134,6 +145,11 @@ export default function ExplicacionItem() {
             En este caso, debido a que las bases y los exponentes son diferentes,
             no se puede aplicar ninguna regla especial.
         </p>
+      <YouTubePlayer
+        videoId="Hzx0eew7X4E"
+        title="División con Bases y Exponentes Diferentes"
+        author="Profe Richard"
+      />  
     </article>
   );
 }

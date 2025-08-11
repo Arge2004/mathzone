@@ -9,6 +9,8 @@ import image8 from "@/assets/operaciones/factorizacion/FactorizaciónImage8.png"
 import image9 from "@/assets/operaciones/factorizacion/FactorizaciónImage9.png";
 import image10 from "@/assets/operaciones/factorizacion/FactorizaciónImage10.png";
 import image11 from "@/assets/operaciones/factorizacion/FactorizaciónImage11.png";
+import YouTubePlayer from "@/components/YoutubePlayer";
+
 
 export default function Factorizacion1() {
   return (
@@ -102,6 +104,11 @@ export default function Factorizacion1() {
         height={200}
         className="my-5"
       />
+      <YouTubePlayer
+        videoId="y_mkvBoYz-Y"
+        title="Factor Común por Agrupación"
+        author="Matemáticas profe Alex"
+      />  
     </article>
   );
 }

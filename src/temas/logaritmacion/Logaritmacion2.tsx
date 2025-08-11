@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import image4 from "@/assets/operaciones/logaritmacion/LogaritmaciónImage4.png";
 import image5 from "@/assets/operaciones/logaritmacion/LogaritmaciónImage5.png";
+import YouTubePlayer from "@/components/YoutubePlayer";
 
 
 export default function ExplicacionItem() {
@@ -21,6 +22,11 @@ export default function ExplicacionItem() {
       <Image src={image4} alt="Propiedad del Producto" width={300} height={200} className="scale-120 my-5" />
       <h4 className="h3-temas">Ejemplo</h4>
       <Image src={image5} alt="Ejemplo" width={300} height={200} className="scale-120 my-5" />
+      <YouTubePlayer
+        videoId="m5qBf1qJjEo"
+        title="Propiedad del Producto"
+        author="Matemáticas profe Alex"
+      />
     </article>
   );
 }

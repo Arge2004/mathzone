@@ -1,4 +1,5 @@
 import React from "react";
+import YouTubePlayer from "@/components/YoutubePlayer";
 
 export default function Factorizacion1() {
   return (
@@ -21,6 +22,11 @@ export default function Factorizacion1() {
         algebraica. A continuación aprenderás los casos más comunes uno por
         uno, con ejemplos sencillos.
       </p>
+      <YouTubePlayer
+        videoId="sSfO1CsKJ4g"
+        title="Introducción a la Factorización"
+        author="Matemáticas profe Alex"
+      />      
     </article>
   );
 }

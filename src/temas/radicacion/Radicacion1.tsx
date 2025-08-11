@@ -6,6 +6,7 @@ import image4 from "@/assets/operaciones/radicacion/RadicaciónImage4.png";
 import image5 from "@/assets/operaciones/radicacion/RadicaciónImage5.png";
 import image6 from "@/assets/operaciones/radicacion/RadicaciónImage6.png";
 import Image from "next/image";
+import YouTubePlayer from "@/components/YoutubePlayer";
 
 export default function ExplicacionItem() {
   return (
@@ -48,6 +49,11 @@ export default function ExplicacionItem() {
       <p>¿Qué numero multiplicado 3 veces da como resultado 27?</p>
       <p>En este caso el adecuado es el 3 ya que:</p>
       <Image src={image6} alt="radicación ejemplos" width={500} height={300}/>
+      <YouTubePlayer
+        videoId="o8iImyEq6Ug"
+        title="Radicación"
+        author="Matemáticas profe Alex" 
+      />
     </article>
   );
 }

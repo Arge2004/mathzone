@@ -6,6 +6,7 @@ import image14 from "@/assets/operaciones/factorizacion/FactorizaciónImage14.pn
 import image15 from "@/assets/operaciones/factorizacion/FactorizaciónImage15.png";
 import image16 from "@/assets/operaciones/factorizacion/FactorizaciónImage16.png";
 import image17 from "@/assets/operaciones/factorizacion/FactorizaciónImage17.png";
+import YouTubePlayer from "@/components/YoutubePlayer"; 
 
 export default function Factorizacion1() {
   return (
@@ -75,6 +76,11 @@ export default function Factorizacion1() {
         width={300}
         height={200}
         className="my-5 scale-120"
+      />
+      <YouTubePlayer
+        videoId="81Nflb3SPk4"
+        title="Diferencia de Cuadrados"
+        author="Matemáticas profe Alex"
       />
     </article>
   );

@@ -3,6 +3,7 @@ import image35 from "@/assets/operaciones/potenciacion/PotenciaciónImage35.png"
 import image36 from "@/assets/operaciones/potenciacion/PotenciaciónImage36.png";
 import image37 from "@/assets/operaciones/potenciacion/PotenciaciónImage37.png";
 import Image from "next/image";
+import YouTubePlayer from "@/components/YoutubePlayer";
 
 
 export default function ExplicacionItem() {
@@ -33,6 +34,11 @@ export default function ExplicacionItem() {
         width={500}
         height={300}
         className="mb-5 scale-80"
+      />
+      <YouTubePlayer
+        videoId="HHVSZWMrAA8"
+        title="Potencia con Exponente Cero"
+        author="Daniel Carreón"
       />
     </article>
   );

@@ -2,6 +2,7 @@ import React from 'react'
 import image1 from "@/assets/operaciones/potenciacion/PotenciaciónImage1.png"
 import image2 from "@/assets/operaciones/potenciacion/PotenciaciónImage2.png"
 import Image from 'next/image'
+import YouTubePlayer from "@/components/YoutubePlayer";
 
 
 
@@ -22,6 +23,11 @@ export default function ExplicacionItem() {
         </p>
         <h3 className='h3-temas'>Algunos Ejemplos</h3>
         <Image src={image2} alt="potenciacion ejemplos" width={500} height={300} />
+        <YouTubePlayer
+          videoId="vwzZEB0SzCI"
+          title="Potenciación"
+          author="Matemáticas profe Alex"
+        />  
 
     </article>
   )

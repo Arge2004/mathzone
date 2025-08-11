@@ -2,6 +2,7 @@ import React from "react";
 import image33 from "@/assets/operaciones/potenciacion/PotenciaciónImage33.png";
 import image34 from "@/assets/operaciones/potenciacion/PotenciaciónImage34.png";
 import Image from "next/image";
+import YouTubePlayer from "@/components/YoutubePlayer";
 
 export default function ExplicacionItem() {
   return (
@@ -24,6 +25,11 @@ export default function ExplicacionItem() {
             width={500}
             height={300}
             className="mb-5 scale-80"
+        />
+        <YouTubePlayer
+          videoId="a_8MdRema-k"
+          title="Potencia de una Potencia"
+          author="Daniel Carreón"
         />
     </article>
   );

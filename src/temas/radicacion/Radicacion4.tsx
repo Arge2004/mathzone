@@ -3,6 +3,7 @@ import Image from "next/image";
 import correct from "@/assets/correct_circle.png";
 import image12 from "@/assets/operaciones/radicacion/RadicaciónImage12.png";
 import image13 from "@/assets/operaciones/radicacion/RadicaciónImage13.png";
+import YouTubePlayer from "@/components/YoutubePlayer";
 
 export default function ExplicacionItem() {
   return (
@@ -38,6 +39,11 @@ export default function ExplicacionItem() {
       <p>
        Ambas raíces tienen el 3 con índice por lo tanto se pueden dividir.
       </p>
+      <YouTubePlayer
+        videoId="awfaWBAAq8s"
+        title="División de Raíces"
+        author="Matemáticas profe Alex"
+      />
     </article>
   );
 }

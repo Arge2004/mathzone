@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import image8 from "@/assets/operaciones/logaritmacion/LogaritmaciónImage8.png";
 import image9 from "@/assets/operaciones/logaritmacion/LogaritmaciónImage9.png";
+import YouTubePlayer from "@/components/YoutubePlayer";
 
 export default function ExplicacionItem() {
   return (
@@ -28,6 +29,11 @@ export default function ExplicacionItem() {
         width={300}
         height={200}
         className="scale-120 my-5"
+      />
+      <YouTubePlayer
+        videoId="iYxfaDPLKbU"
+        title="Propiedad de la Potencia"
+        author="Matemáticas profe Alex"
       />
     </article>
   );

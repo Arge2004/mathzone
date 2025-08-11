@@ -6,6 +6,7 @@ import image6 from "@/assets/operaciones/potenciacion/PotenciaciónImage6.png";
 import image7 from "@/assets/operaciones/potenciacion/PotenciaciónImage7.png";
 import Image from "next/image";
 import StepOperation from "@/components/StepOperation";
+import YouTubePlayer from "@/components/YoutubePlayer";
 
 export default function ExplicacionItem() {
   return (
@@ -32,6 +33,11 @@ export default function ExplicacionItem() {
         Por lo tanto esto quedaría así:
       </p>
       <Image src={image7} alt="potencias suma" width={500} height={200} className="mb-5" />
+      <YouTubePlayer
+        videoId="ooYT3koEvS8"
+        title="Potencias-Suma"
+        author="Profe Richard"
+      />
     </article>
   );
 }

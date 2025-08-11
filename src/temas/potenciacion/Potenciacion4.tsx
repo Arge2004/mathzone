@@ -9,6 +9,7 @@ import image19 from "@/assets/operaciones/potenciacion/PotenciaciónImage19.png"
 import image20 from "@/assets/operaciones/potenciacion/PotenciaciónImage20.png";
 import image21 from "@/assets/operaciones/potenciacion/PotenciaciónImage21.png";
 import Image from "next/image";
+import YouTubePlayer from "@/components/YoutubePlayer";
 
 export default function ExplicacionItem() {
   return (
@@ -53,6 +54,11 @@ export default function ExplicacionItem() {
         height={200}
         className="mb-5 scale-80"
       />
+      <YouTubePlayer
+        videoId="U8LGr4IoYo8"
+        title="Múltiplicación con Iguales Bases"
+        author="Daniel Carreón"
+      />
       <h4 className="h3-temas">
         2. Multiplicación de potencias de exponentes iguales
       </h4>
@@ -78,6 +84,11 @@ export default function ExplicacionItem() {
         height={200}
         className="mb-5 scale-80"
       />
+      <YouTubePlayer
+        videoId="ZKKm29R-gHY"
+        title="Múltiplicación con Iguales Exponentes"
+        author="Profe Richard"
+      />  
       <h4 className="h3-temas">
         3. Multiplicación de potencias de bases y exponentes diferentes
       </h4>
@@ -117,6 +128,11 @@ export default function ExplicacionItem() {
         width={500}
         height={300}
         className="mb-5 scale-80"
+      />
+      <YouTubePlayer
+        videoId="pZpaAjnAZWE"
+        title="Múltiplicación con Bases y Exponentes Diferentes"
+        author="Daniel Carreón"
       />
     </article>
   );

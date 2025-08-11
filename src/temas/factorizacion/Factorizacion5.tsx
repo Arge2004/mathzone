@@ -8,6 +8,7 @@ import image21 from "@/assets/operaciones/factorizacion/FactorizaciónImage21.pn
 import image22 from "@/assets/operaciones/factorizacion/FactorizaciónImage22.png";
 import image23 from "@/assets/operaciones/factorizacion/FactorizaciónImage23.png";
 import image24 from "@/assets/operaciones/factorizacion/FactorizaciónImage24.png";
+import YouTubePlayer from "@/components/YoutubePlayer";
 
 export default function Factorizacion1() {
   return (
@@ -112,6 +113,11 @@ export default function Factorizacion1() {
         width={300}
         height={200}
         className="scale-120"
+      />
+      <YouTubePlayer
+        videoId="1gZx3M8EqN8"
+        title="Diferencia de Cubos"     
+        author="Matemáticas profe Alex"
       />
     </article>
   );

@@ -6,6 +6,7 @@ import image11 from "@/assets/operaciones/potenciacion/PotenciaciónImage11.png"
 import image12 from "@/assets/operaciones/potenciacion/PotenciaciónImage12.png";
 import Image from "next/image";
 import StepOperation from "@/components/StepOperation";
+import YouTubePlayer from "@/components/YoutubePlayer"; 
 
 export default function ExplicacionItem() {
   return (
@@ -50,6 +51,11 @@ export default function ExplicacionItem() {
         Por lo tanto esto quedaría así:
       </p>
       <Image src={image12} alt="potencias resta" width={500} height={200} className="mb-5 scale-80" />
+      <YouTubePlayer
+        videoId="-puVDm8LebY"
+        title="Potencias-Resta"
+        author="Profe Richard"
+      />
     </article>
   );
 }
