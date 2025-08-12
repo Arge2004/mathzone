@@ -12,7 +12,7 @@ export default function MenuOverlay() {
         <Link href="/" className="w-14">
           <Image src={logo} alt="MathZone Logo" width={54} height={54} />
         </Link>
-        <span className="text-2xl font-bold notranslate">The Mathematics Web</span>
+        <span className="text-xl font-bold xl:text-2xl notranslate">The Mathematics Web</span>
       </div>
 
       <div
