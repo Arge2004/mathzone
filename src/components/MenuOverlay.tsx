@@ -8,11 +8,11 @@ export default function MenuOverlay() {
   const [hidden, setHidden] = useState(true);
   return (
     <div className="flex h-24 items-center text-sky-800 justify-between ">
-      <div className="flex items-center gap-10 ">
+      <div className="flex items-center gap-2 xl:gap-4 xl:min-w-72">
         <Link href="/" className="w-14">
           <Image src={logo} alt="MathZone Logo" width={54} height={54} />
         </Link>
-        <span className="text-4xl font-bold notranslate">MathZone</span>
+        <span className="text-2xl font-bold notranslate">The Mathematics Web</span>
       </div>
 
       <div

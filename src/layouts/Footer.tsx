@@ -31,14 +31,15 @@ export default function Footer() {
 
         {/* Descripción del proyecto */}
         <div className="col-span-3">
-          <h3 className="font-bold h3-temas mb-2">
-            Sobre el Proyecto
-          </h3>
+          <h3 className="font-bold h3-temas mb-2">Acerca del Sitio</h3>
           <p className="text-gray-900 text-sm leading-relaxed">
-            Este proyecto busca crear una plataforma educativa interactiva para
-            apoyar el aprendizaje de las matemáticas en estudiantes de
-            secundaria, integrando recursos didácticos y evaluaciones
-            adaptativas.
+            Este sitio web hace parte del proyecto de investigación{" "}
+            <strong>The Mathematics Web</strong> : una forma de fortalecer los
+            desempeños en las competencias del pensamiento matemático en los
+            estudiantes de noveno en la I.E. Baltazar Salazar, tiene como
+            objetivo ofrecer un recurso digital para el fortalecimiento de las
+            competencias del pensamiento matemático, mediante estrategias
+            didácticas, videos y test para facilitar el aprendizaje.
           </p>
         </div>
 
@@ -47,14 +48,14 @@ export default function Footer() {
           <h3 className="h3-temas mb-2">Investigadores</h3>
           <ul className="text-gray-900 text-sm space-y-1 list-disc pl-5">
             <li>Gabriel Medina Morales</li>
-            <li>Juan Andrés Putero</li>
+            <li>Juan Andrés Villa Castro</li>
           </ul>
         </div>
       </div>
 
       {/* Línea inferior */}
       <div className="border-b  border-sky-300 pb-3 pt-5 xl:pt-0 px-5 text-center text-sm text-gray-900">
-        © {new Date().getFullYear()} Proyecto MathZone — Todos los derechos
+        © {new Date().getFullYear()} The Mathematics Web — Todos los derechos
         reservados
       </div>
 

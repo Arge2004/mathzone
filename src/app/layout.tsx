@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "MathZone",
+  title: "The Mathematics Web",
   description: "A platform for learning and practicing math",
 };
 
